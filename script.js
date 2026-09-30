@@ -22,6 +22,15 @@ const projects = [
     },
     {
         id: 3,
+        title: "Traffic Analytics & Vehicle Counting 🚗",
+        year: "2025",
+        type: "Group Project (Deep Learning & Computer Vision)",
+        role: "Computer Vision & Model Integration Developer",
+        github: "https://github.com/vorddd/deep_learning-aol",
+        description: "An experimental video-based vehicle counting and traffic analytics system powered by Deep Learning. The system integrates YOLOv8 for real-time vehicle detection (cars, motorbikes, buses, trucks) and the Simple Online and Realtime Tracking (SORT) algorithm to maintain consistent vehicle tracking across frames.\n\nKey features include a virtual line-crossing mechanism for automated counting and a homography perspective transformation matrix for real-world vehicle speed estimation. The application exports structured performance logs including traffic flow, density, and average speed metrics."
+    },
+    {
+        id: 4,
         title: "BlueNav Health Catalog 🚑",
         year: "2026",
         type: "Group Class Project (HCI)",
@@ -30,7 +39,7 @@ const projects = [
         description: "BlueNav is designed as a smart 'Digital First Aid Kit' that fits right in the user's pocket. It navigates users through interactive first aid tutorials, helps locate nearest healthcare facilities, and features an AI-based assistant.\n\nWe strictly applied Human Interface Guidelines (HIG) to create a clean, distraction-free, and intuitive interface."
     },
     {
-        id: 4,
+        id: 5,
         title: "ScanGuard Breast Cancer 🩺",
         year: "2026",
         type: "Group Class Project (Computer Vision)",
@@ -40,7 +49,7 @@ const projects = [
         description: "ScanGuard is an AI-powered medical imaging diagnostic tool designed to assist healthcare professionals in the early detection of breast cancer. By analyzing mammogram scans, the system identifies anomalies and potential malignancies.\n\nWe implemented EfficientNet CNN architecture for exceptional balance of accuracy and computational efficiency."
     },
     {
-        id: 5,
+        id: 6,
         title: "Decoding Online Toxicity 💬",
         year: "2026",
         type: "Group Final Project (NLP)",
