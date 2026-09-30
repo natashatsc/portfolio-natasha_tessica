@@ -56,7 +56,7 @@ const projects = [
         role: "NLP / Deep Learning Developer",
         github: "https://github.com/ChYpHuTh14/cyberbullying-detection",
         streamlit: "https://indobert-cyberbullying-detection.streamlit.app/",
-        description: "Decoding Online Toxicity is an NLP solution designed to combat cyberbullying and hate speech across digital platforms. Built using fine-tuned IndoBERT—a pre-trained contextual Transformer model—the application effectively classifies informal Indonesian text containing slang, abbreviations, and personal attacks.\n\nThe project features an interactive Streamlit web application that provides real-time toxicity classification alongside visual confidence scores. To ensure real-world efficacy, the system underwent User Acceptance Testing (UAT) and psychological expert evaluation to serve as an intuitive content moderation tool."
+        description: "Decoding Online Toxicity is an NLP solution designed to combat cyberbullying and hate speech across digital platforms. Built using fine-tuned IndoBERT, a pre-trained contextual Transformer model, the application effectively classifies informal Indonesian text containing slang, abbreviations, and personal attacks.\n\nThe project features an interactive Streamlit web application that provides real-time toxicity classification alongside visual confidence scores. To ensure real-world efficacy, the system underwent User Acceptance Testing (UAT) and psychological expert evaluation to serve as an intuitive content moderation tool."
     }
 ];
 
