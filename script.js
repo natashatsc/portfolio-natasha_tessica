@@ -1,4 +1,4 @@
-// --- DATA PROJECTS PORTOFOLIO ---
+// DATA PROJECTS PORTOFOLIO
 const projects = [
     {
         id: 1,
@@ -17,7 +17,7 @@ const projects = [
         type: "Group Class Project (Deep Learning)",
         role: "Deep Learning Developer",
         streamlit: "https://kuzd98yln6xfusiyfpzge4.streamlit.app/",
-        github: "https://utsmlopsjantung-nxhzffsppc4hmjz9vthnav.streamlit.app/",
+        github: "https://github.com/natashatsc",
         description: "Tomato Leaf Disease Classifier is a Computer Vision solution built to identify various plant pathologies through leaf images. Leveraging advanced CNN architectures, the app provides farmers with a high-accuracy tool (96%) to detect diseases like Bacterial Spot or Late Blight early.\n\nIn this project, I implemented MobileNet for the CNN architecture to ensure the model remained lightweight enough for mobile use while maintaining peak accuracy."
     },
     {
@@ -41,17 +41,17 @@ const projects = [
     },
     {
         id: 5,
-        title: "NLP Sentiment Analysis 💬",
+        title: "Decoding Online Toxicity 💬",
         year: "2026",
-        type: "Class Project (NLP)",
-        role: "AI / NLP Developer",
+        type: "Group Final Project (NLP)",
+        role: "NLP / Deep Learning Developer",
         github: "https://github.com/ChYpHuTh14/cyberbullying-detection",
-        streamlit: "https://indobert-cyberbullying-detection.streamlit.app/ ",
-        description: "Decoding Online Toxicity is an NLP solution designed to combat cyberbullying and hate speech across digital platforms. Built using fine-tuned IndoBERT—a pre-trained contextual Transformer model—the application effectively classifies informal Indonesian text containing slang, abbreviations, and personal attacks.   The project features an interactive Streamlit web application that provides real-time toxicity classification alongside visual confidence scores. To ensure real-world efficacy, the system underwent User Acceptance Testing (UAT) and psychological expert evaluation to serve as an intuitive content moderation tool."
+        streamlit: "https://indobert-cyberbullying-detection.streamlit.app/",
+        description: "Decoding Online Toxicity is an NLP solution designed to combat cyberbullying and hate speech across digital platforms. Built using fine-tuned IndoBERT—a pre-trained contextual Transformer model—the application effectively classifies informal Indonesian text containing slang, abbreviations, and personal attacks.\n\nThe project features an interactive Streamlit web application that provides real-time toxicity classification alongside visual confidence scores. To ensure real-world efficacy, the system underwent User Acceptance Testing (UAT) and psychological expert evaluation to serve as an intuitive content moderation tool."
     }
 ];
 
-// --- RENDER CARDS TO GRID ---
+// RENDER CARDS TO GRID
 const projectsGrid = document.getElementById('projectsGrid');
 
 function renderProjects() {
@@ -70,7 +70,7 @@ function renderProjects() {
     `).join('');
 }
 
-// --- MODAL POPUP ---
+// MODAL POPUP
 const modal = document.getElementById('projectModal');
 const modalBody = document.getElementById('modalBody');
 const modalClose = document.getElementById('modalClose');
@@ -84,10 +84,10 @@ function openProjectModal(id) {
         linksHTML += `<a href="${project.github}" target="_blank" class="btn btn-pop-white"><i class="fab fa-github"></i> GitHub</a>`;
     }
     if (project.streamlit) {
-        linksHTML += `<a href="${project.streamlit}" target="_blank" class="btn btn-pop-purple"><i class="fas fa-external-link-alt"></i> Streamlit</a>`;
+        linksHTML += `<a href="${project.streamlit}" target="_blank" class="btn btn-pop-purple"><i class="fas fa-external-link-alt"></i> Streamlit App</a>`;
     }
     if (project.vercel) {
-        linksHTML += `<a href="${project.vercel}" target="_blank" class="btn btn-pop-purple"><i class="fas fa-external-link-alt"></i> Vercel</a>`;
+        linksHTML += `<a href="${project.vercel}" target="_blank" class="btn btn-pop-purple"><i class="fas fa-external-link-alt"></i> Vercel App</a>`;
     }
 
     modalBody.innerHTML = `
@@ -113,7 +113,7 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) modal.classList.remove('active');
 });
 
-// --- HAMBURGER MENU MOBILE ---
+// HAMBURGER MENU MOBILE
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
