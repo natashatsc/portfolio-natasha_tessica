@@ -1,57 +1,57 @@
-// --- DATA PROJECT PORTOFOLIO ---
+// --- DATA PROJECTS PORTOFOLIO ---
 const projects = [
     {
         id: 1,
-        title: "Heart Disease Predictor",
+        title: "Heart Disease Predictor 🫀",
         year: "2025",
         type: "Class Project (MLOps)",
         role: "Lead MLOps Engineer & Frontend Developer",
-        streamlit: "https://streamlit.io/",
-        github: "https://github.com/",
+        streamlit: "https://utsmlopsjantung-nxhzffsppc4hmjz9vthnav.streamlit.app/",
+        github: "https://github.com/natashatsc/UTS_MLOPS_jantung",
         description: "Heart Disease Risk Predictor is an end-to-end MLOps web application designed to help users estimate their cardiovascular risk based on clinical data. By utilizing Logistic Regression, the tool provides a diagnostic probability that assists individuals in making informed health decisions quickly.\n\nThis project involved a complete machine learning pipeline, from data preprocessing to model evaluation. I was responsible for the full-stack deployment using Streamlit, ensuring that the complex backend logic was translated into a simple, accessible interface for non-medical users."
     },
     {
         id: 2,
-        title: "Tomato Leaf Classifier",
+        title: "Tomato Leaf Classifier 🍅",
         year: "2025",
         type: "Group Class Project (Deep Learning)",
         role: "Deep Learning Developer",
-        streamlit: "LINK TOMATO LEAF STREAMLIT DISINI",
-        github: "https://github.com/",
+        streamlit: "https://kuzd98yln6xfusiyfpzge4.streamlit.app/",
+        github: "https://utsmlopsjantung-nxhzffsppc4hmjz9vthnav.streamlit.app/",
         description: "Tomato Leaf Disease Classifier is a Computer Vision solution built to identify various plant pathologies through leaf images. Leveraging advanced CNN architectures, the app provides farmers with a high-accuracy tool (96%) to detect diseases like Bacterial Spot or Late Blight early.\n\nIn this project, I implemented MobileNet for the CNN architecture to ensure the model remained lightweight enough for mobile use while maintaining peak accuracy."
     },
     {
         id: 3,
-        title: "BlueNav Health Catalog",
+        title: "BlueNav Health Catalog 🚑",
         year: "2026",
         type: "Group Class Project (HCI)",
         role: "Designer & Developer",
-        vercel: "https://vercel.com/",
+        vercel: "https://hci-amber-theta.vercel.app/",
         description: "BlueNav is designed as a smart 'Digital First Aid Kit' that fits right in the user's pocket. It navigates users through interactive first aid tutorials, helps locate nearest healthcare facilities, and features an AI-based assistant.\n\nWe strictly applied Human Interface Guidelines (HIG) to create a clean, distraction-free, and intuitive interface."
     },
     {
         id: 4,
-        title: "ScanGuard Breast Cancer",
+        title: "ScanGuard Breast Cancer 🩺",
         year: "2026",
         type: "Group Class Project (Computer Vision)",
         role: "Deep Learning Developer",
-        github: "https://github.com/",
-        streamlit: "https://streamlit.io/",
+        github: "https://github.com/Dustinedde22/Breastcancer",
+        streamlit: "https://breastcancer-4it4ahasdiurcrqguxg7km.streamlit.app/",
         description: "ScanGuard is an AI-powered medical imaging diagnostic tool designed to assist healthcare professionals in the early detection of breast cancer. By analyzing mammogram scans, the system identifies anomalies and potential malignancies.\n\nWe implemented EfficientNet CNN architecture for exceptional balance of accuracy and computational efficiency."
     },
     {
         id: 5,
-        title: "NLP Sentiment Analysis",
+        title: "NLP Sentiment Analysis 💬",
         year: "2026",
         type: "Class Project (NLP)",
         role: "AI / NLP Developer",
-        github: "LINK NLP GITHUB DISINI",
-        streamlit: "LINK NLP STREAMLIT DISINI",
-        description: "DESKRIPSI NLP SENTIMENT ANALYSIS DISINI. (Proyek ini berfokus pada analisis sentimen teks menggunakan teknik Natural Language Processing modern untuk mengklasifikasikan ulasan secara otomatis)."
+        github: "https://github.com/ChYpHuTh14/cyberbullying-detection",
+        streamlit: "https://indobert-cyberbullying-detection.streamlit.app/ ",
+        description: "Decoding Online Toxicity is an NLP solution designed to combat cyberbullying and hate speech across digital platforms. Built using fine-tuned IndoBERT—a pre-trained contextual Transformer model—the application effectively classifies informal Indonesian text containing slang, abbreviations, and personal attacks.   The project features an interactive Streamlit web application that provides real-time toxicity classification alongside visual confidence scores. To ensure real-world efficacy, the system underwent User Acceptance Testing (UAT) and psychological expert evaluation to serve as an intuitive content moderation tool."
     }
 ];
 
-// --- RENDER PROJECT CARDS ---
+// --- RENDER CARDS TO GRID ---
 const projectsGrid = document.getElementById('projectsGrid');
 
 function renderProjects() {
@@ -63,7 +63,7 @@ function renderProjects() {
                 <p class="project-snippet">${p.description.substring(0, 100)}...</p>
             </div>
             <div class="project-footer">
-                <span><i class="far fa-calendar-alt"></i> ${p.year}</span>
+                <span>🗓️ ${p.year}</span>
                 <span class="click-hint">Lihat Detail &rarr;</span>
             </div>
         </div>
@@ -81,23 +81,23 @@ function openProjectModal(id) {
 
     let linksHTML = '';
     if (project.github) {
-        linksHTML += `<a href="${project.github}" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>`;
+        linksHTML += `<a href="${project.github}" target="_blank" class="btn btn-pop-white"><i class="fab fa-github"></i> GitHub</a>`;
     }
     if (project.streamlit) {
-        linksHTML += `<a href="${project.streamlit}" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Streamlit</a>`;
+        linksHTML += `<a href="${project.streamlit}" target="_blank" class="btn btn-pop-purple"><i class="fas fa-external-link-alt"></i> Streamlit</a>`;
     }
     if (project.vercel) {
-        linksHTML += `<a href="${project.vercel}" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Vercel</a>`;
+        linksHTML += `<a href="${project.vercel}" target="_blank" class="btn btn-pop-purple"><i class="fas fa-external-link-alt"></i> Vercel</a>`;
     }
 
     modalBody.innerHTML = `
         <span class="project-tag">${project.type}</span>
-        <h2 style="font-size: 1.6rem; margin: 10px 0;">${project.title}</h2>
+        <h2 style="font-size: 1.8rem; margin: 10px 0;">${project.title}</h2>
         <div class="modal-meta">
-            <p><strong>Tahun:</strong> ${project.year}</p>
-            <p><strong>Role:</strong> ${project.role}</p>
+            <p><strong>🗓️ Tahun:</strong> ${project.year}</p>
+            <p><strong>👩‍💻 Role:</strong> ${project.role}</p>
         </div>
-        <div style="white-space: pre-line; color: var(--text-secondary); line-height: 1.6;">
+        <div style="white-space: pre-line; color: var(--text-muted); line-height: 1.6;">
             ${project.description}
         </div>
         <div class="modal-links">

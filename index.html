@@ -3,122 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natasha Tessica - Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
+    <title>Natasha Tessica ✦ Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#home" class="logo">Natasha<span>dev</span></a>
-            <nav class="nav-links" id="navLinks">
+    <!-- Floating Navbar Capsule -->
+    <header class="navbar-wrapper">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Natasha<span>.ai</span> 🌸</a>
+            <div class="nav-links" id="navLinks">
                 <a href="#home" class="nav-item">Home</a>
                 <a href="#about" class="nav-item">About</a>
                 <a href="#projects" class="nav-item">Projects</a>
                 <a href="#contact" class="nav-item">Contact</a>
-            </nav>
+            </div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <!-- SECTION 1: HOME -->
-    <section id="home" class="home-section">
-        <div class="container home-container">
-            <div class="hero-badge">🚀 Welcome to My Space</div>
-            <h1 class="home-title">Hi, I'm <span class="highlight">Natasha Tessica</span></h1>
-            <p class="home-subtitle">Artificial Intelligence Student B28 @ BINUS University</p>
-            <p class="home-description">
-                Passionate about Machine Learning, Computer Vision, MLOps, and human-centered AI solutions.
+    <!-- SECTION 1: HOME (HERO) -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="sticker-tag yellow-sticker">✨ Hello World! Welcome to my space</div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight-pink">Natasha Tessica</span> 👋
+            </h1>
+            <p class="hero-subtitle">
+                🤖 Artificial Intelligence Student <b>B28</b> @ <b>BINUS University</b>
             </p>
-            <div class="home-actions">
-                <a href="#projects" class="btn btn-primary">Explore My Projects <i class="fas fa-arrow-right"></i></a>
-                <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            <p class="hero-desc">
+                Building smart machine learning models, computer vision solutions, and fun AI applications with empathy and modern design.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-pop-purple">Explore Projects</a>
+                <a href="#contact" class="btn btn-pop-white">Let's Connect!</a>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 2: ABOUT (Sesuai Desain Foto) -->
+    <!-- SECTION 2: ABOUT & EXPERIENCE (Playful Layout) -->
     <section id="about" class="about-section">
         <div class="container">
-            <div class="about-header">
-                <span class="badge-pill">✨ GET TO KNOW</span>
-                <h1 class="about-name">Natasha Tessica</h1>
+            <div class="section-title-wrapper">
+                <span class="sticker-tag blue-sticker">✨ GET TO KNOW ME</span>
+                <h2 class="about-main-name">Natasha Tessica</h2>
             </div>
 
             <div class="about-grid">
-                <!-- Kolom Kiri: Who Am I? & Tombol CV -->
-                <div class="who-am-i-card">
-                    <h2>Who Am I?</h2>
-                    <p>
+                <!-- Card Kiri: Who Am I -->
+                <div class="pop-card card-purple-accent">
+                    <div class="card-badge">Who Am I?</div>
+                    <p class="about-text">
                         I am an Artificial Intelligence student (B28) at BINUS University who is highly adaptable, collaborative, and thrives in team-oriented problem-solving environments.
                     </p>
-                    <p>
+                    <p class="about-text">
                         My leadership experiences, ranging from high school committees to serving as a University Freshmen Partner, have equipped me with empathy—a crucial element in designing digital products that are not only technologically advanced but also genuinely helpful for everyday users.
                     </p>
-                    <div class="cv-button-wrapper">
-                        <a href="cv.pdf" target="_blank" class="btn-cv">
-                            <i class="fas fa-file-alt"></i> View Full Resume
+                    
+                    <div class="cv-button-container">
+                        <a href="cv.pdf" target="_blank" class="btn-cv-pop">
+                            <i class="fas fa-file-pdf"></i> View Full Resume
                         </a>
                     </div>
                 </div>
 
-                <!-- Kolom Kanan: Experience & Leadership Timeline -->
-                <div class="experience-container">
-                    <h2 class="experience-title">Experience 🚀</h2>
+                <!-- Card Kanan: Experience Timeline -->
+                <div class="pop-card card-white">
+                    <h3 class="exp-header">Experience</h3>
+                    
                     <div class="timeline">
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">MAY 2025 — PRESENT</span>
-                                <h3>Part-time IT Support & Data Analytics</h3>
-                                <h4>PT Multi Dental Indonesia</h4>
-                            </div>
+                        <div class="timeline-box">
+                            <span class="time-pill">MAY 2025 — PRESENT</span>
+                            <h4>Part-time IT Support & Data Analytics</h4>
+                            <h5>PT Multi Dental Indonesia</h5>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">SEP 2025 — MAY 2026</span>
-                                <h3>Freshmen Partner</h3>
-                                <h4>BINUS University</h4>
-                            </div>
+                        <div class="timeline-box">
+                            <span class="time-pill">SEP 2025 — MAY 2026</span>
+                            <h4>Freshmen Partner</h4>
+                            <h5>BINUS University</h5>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">JUL 2025 — SEP 2025</span>
-                                <h3>Freshmen Leader</h3>
-                                <h4>BINUS University</h4>
-                            </div>
+                        <div class="timeline-box">
+                            <span class="time-pill">JUL 2025 — SEP 2025</span>
+                            <h4>Freshmen Leader</h4>
+                            <h5>BINUS University</h5>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">MAY 2024 — AUG 2024</span>
-                                <h3>Public Relations & Event Coordinator</h3>
-                                <h4>Student Organization Committee</h4>
-                            </div>
+                        <div class="timeline-box">
+                            <span class="time-pill">MAY 2024 — AUG 2024</span>
+                            <h4>Public Relations Lead</h4>
+                            <h5>Student Organization Committee</h5>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">JUN 2024 — AUG 2024</span>
-                                <h3>Coding Competition Committee</h3>
-                                <h4>Tech Community Event</h4>
-                            </div>
+                        <div class="timeline-box">
+                            <span class="time-pill">JUN 2024 — AUG 2024</span>
+                            <h4>Coding Competition Committee</h4>
+                            <h5>Tech Event BINUS</h5>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -128,13 +115,14 @@
     <!-- SECTION 3: PROJECTS -->
     <section id="projects" class="projects-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p>Klik pada kartu proyek untuk melihat deskripsi lengkap, arsitektur AI, dan tautan langsung.</p>
+            <div class="section-title-wrapper text-center">
+                <span class="sticker-tag mint-sticker">MY WORK & LABS</span>
+                <h2 class="section-heading">Featured Projects ⚡</h2>
+                <p class="section-subtext">Click on any project card to view full details & external links!</p>
             </div>
 
             <div class="projects-grid" id="projectsGrid">
-                <!-- Cards akan di-generate via JavaScript -->
+                <!-- Rendered by JavaScript -->
             </div>
         </div>
     </section>
@@ -142,32 +130,40 @@
     <!-- SECTION 4: CONTACT -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="contact-card">
-                <h2>Let's Connect & Collaborate!</h2>
-                <p>Saya selalu terbuka untuk berdiskusi seputar AI, proyek kolaborasi, maupun peluang magang/karir.</p>
-                <div class="social-links">
-                    <a href="https://github.com/" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="mailto:natasha@example.com" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+            <div class="pop-card card-yellow-accent text-center">
+                <span class="sticker-tag purple-sticker">SAY HELLO!</span>
+                <h2 class="contact-title">Let's Connect & Build Cool Stuff Together! ✨</h2>
+                <p class="contact-sub">I am open to AI project collaborations, MLOps discussions, and internship opportunities!</p>
+                
+                <div class="social-pop-grid">
+                    <a href="https://github.com/natashatsc" target="_blank" class="social-card-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/natasha-tessica-88654b304?utm_source=share_via&utm_-content=profile&utm_medium=member_ios" target="_blank" class="social-card-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:natasha.tessicaaa@binus.ac.id" class="social-card-btn">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal Popup Detail Project -->
+    <!-- Modal Detail Project Interaktif -->
     <div class="modal-overlay" id="projectModal">
-        <div class="modal-content">
+        <div class="modal-card">
             <button class="modal-close" id="modalClose">&times;</button>
             <div class="modal-body" id="modalBody">
-                <!-- Diisi otomatis oleh JavaScript -->
+                <!-- Dynamic Content -->
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Natasha Tessica. All Rights Reserved.</p>
+        <div class="container text-center">
+            <p>Made with 💖 by <b>Natasha Tessica</b> • BINUS University B28 AI Student</p>
         </div>
     </footer>
 
