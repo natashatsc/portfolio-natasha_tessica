@@ -2,7 +2,7 @@
 const projects = [
     {
         id: 1,
-        title: "Heart Disease Predictor 🫀",
+        title: "Heart Disease Predictor",
         year: "2025",
         type: "Class Project (MLOps)",
         role: "Lead MLOps Engineer & Frontend Developer",
@@ -12,7 +12,7 @@ const projects = [
     },
     {
         id: 2,
-        title: "Tomato Leaf Classifier 🍅",
+        title: "Tomato Leaf Classifier",
         year: "2025",
         type: "Group Class Project (Deep Learning)",
         role: "Deep Learning Developer",
@@ -22,7 +22,7 @@ const projects = [
     },
     {
         id: 3,
-        title: "Traffic Analytics & Vehicle Counting 🚗",
+        title: "Traffic Analytics & Vehicle Counting",
         year: "2025",
         type: "Group Project (Deep Learning & Computer Vision)",
         role: "Computer Vision & Model Integration Developer",
@@ -31,16 +31,7 @@ const projects = [
     },
     {
         id: 4,
-        title: "BlueNav Health Catalog 🚑",
-        year: "2026",
-        type: "Group Class Project (HCI)",
-        role: "Designer & Developer",
-        vercel: "https://hci-amber-theta.vercel.app/",
-        description: "BlueNav is designed as a smart 'Digital First Aid Kit' that fits right in the user's pocket. It navigates users through interactive first aid tutorials, helps locate nearest healthcare facilities, and features an AI-based assistant.\n\nWe strictly applied Human Interface Guidelines (HIG) to create a clean, distraction-free, and intuitive interface."
-    },
-    {
-        id: 5,
-        title: "ScanGuard Breast Cancer 🩺",
+        title: "ScanGuard Breast Cancer",
         year: "2026",
         type: "Group Class Project (Computer Vision)",
         role: "Deep Learning Developer",
@@ -49,8 +40,8 @@ const projects = [
         description: "ScanGuard is an AI-powered medical imaging diagnostic tool designed to assist healthcare professionals in the early detection of breast cancer. By analyzing mammogram scans, the system identifies anomalies and potential malignancies.\n\nWe implemented EfficientNet CNN architecture for exceptional balance of accuracy and computational efficiency."
     },
     {
-        id: 6,
-        title: "Decoding Online Toxicity 💬",
+        id: 5,
+        title: "Decoding Online Toxicity",
         year: "2026",
         type: "Group Final Project (NLP)",
         role: "NLP / Deep Learning Developer",
